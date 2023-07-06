@@ -1,15 +1,19 @@
-import { motion } from 'framer-motion'
-import Hero from '@/components/Hero'
+import Background from "@/components/Background";
+import Intro from "@/components/Intro";
+import SelfSummary from "@/components/SelfSummary";
+import Achievements from "@/components/Achievements";
+import Contact from "@/components/Contact";
 
 export default function Homepage() {
   return (
-
-    <div className="flex flex-col min-h-screen">
-      <Hero />
-
-      <footer>
-        {/* Footer content goes here */}
-      </footer>
-    </div>
-  )
+    <>
+      <Background />
+      <main>
+        <Intro />
+        <SelfSummary />
+        <Achievements />
+        <Contact />
+      </main>
+    </>
+  );
 }
